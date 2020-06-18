@@ -5,11 +5,13 @@ x=1
 print(a)
 print(b)
 for x in range(15):
- if x <= 15:
+  if x <= 15:
     s=a+b
     a=b
     b=s
     print(s)
+else:
+ print("end of fibonacci series")
     
 o/p:
 0
@@ -29,4 +31,4 @@ o/p:
 377
 610
 987
-
+end
