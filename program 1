@@ -3,8 +3,14 @@ r=input("enter the radius:")
 r=float(r)
 ar=3.14*r**r 
 print("the area of circle is:"+ str(ar))
+o/p:
+enter the radius:1.1
+the area of circle is:3.487077516911368
 
 #to get file name extension
 filename=input("Enter a filename:")
 e=filename.split(".")
 print ("Extension of the filename is : " + e[1])
+o/p:
+Enter a filename:abc.txt
+Extension of the file is : txt
