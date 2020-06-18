@@ -7,4 +7,4 @@ print("the area of circle is:"+ str(ar))
 #to get file name extension
 filename=input("Enter a filename:")
 e=filename.split(".")
-print ("Extension of the file is : " + e[1])
+print ("Extension of the filename is : " + e[1])
