@@ -1,0 +1,32 @@
+#fibonacci series
+a=0
+b=1
+x=1
+print(a)
+print(b)
+for x in range(15):
+ if x <= 15:
+    s=a+b
+    a=b
+    b=s
+    print(s)
+    
+o/p:
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+987
+
