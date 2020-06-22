@@ -1,0 +1,17 @@
+
+word=input("enter a word:")
+fre={}
+def most_frequent(word):
+    for ch in word:
+        if ch in fre:
+            fre[ch]= fre[ch]+ 1
+        else:
+            fre[ch]=1
+            
+
+most_frequent(word)
+print(fre)
+
+o/p:
+enter a word:mississippi
+{'m': 1, 'i': 4, 's': 4, 'p': 2}
