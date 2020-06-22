@@ -1,4 +1,4 @@
-
+import operator
 word=input("enter a word:")
 fre={}
 def most_frequent(word):
@@ -11,7 +11,12 @@ def most_frequent(word):
 
 most_frequent(word)
 print(fre)
+print("in descending order:")
+fre1 = sorted(fre.items(),key=operator.itemgetter(1),reverse=True)
+print(dict(fre1))
 
 o/p:
 enter a word:mississippi
 {'m': 1, 'i': 4, 's': 4, 'p': 2}
+in descending order:
+{'i': 4, 's': 4, 'p': 2, 'm': 1}
