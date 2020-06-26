@@ -1,0 +1,75 @@
+#Project 1- School administration
+
+import csv
+
+def write_into_csv(info_list):
+    with open('Student_info.csv','a', newline='') as csv_file:
+        writer = csv.writer(csv_file)
+        
+        if csv_file.tell() ==0:
+            writer.writerow(["Name","Age","Contact Number","Email-ID"])
+            
+        writer.writerow(info_list)
+
+
+
+if __name__ == '__main__':
+    
+    condition=True
+    student_n=1
+    while(condition==True):
+    
+      student_info =input("Enter the student's information in the following format - Name,age,contact and Email Id:\n")
+    
+      student_info_list=student_info.split(' ')
+    
+      print("\n The Information you have entered for student {} is- \nName: {} \nAge: {} \nContact Number: {} \nEmail-ID: {}"
+          .format(student_n,student_info_list[0],student_info_list[1],student_info_list[2],student_info_list[3]))
+    
+      choice_check=input("Are You sure that the information you have entered is correct? yes/no:")
+    
+      if choice_check=='yes':
+        write_into_csv(student_info_list)
+        
+        condition_check=input("Do you want to add more Student's information? yes/no:")
+        if condition_check == 'yes':
+            condition= True
+            student_n=student_n+1
+            
+        elif condition_check=='no':
+            condition= False
+            
+        elif choice_check=='no':
+            print("Please enter the correct information!!")
+            
+o/p:
+Enter the student's information in the following format - Name,age,contact and Email Id:
+taemin 18 9920 taemin@gmail.com
+
+ The Information you have entered for student 1 is- 
+Name: taemin 
+Age: 18 
+Contact Number: 9920 
+Email-ID: taemin@gmail.com
+Are You sure that the information you have entered is correct? yes/no:yes
+Do you want to add more Student's information? yes/no:yes
+Enter the student's information in the following format - Name,age,contact and Email Id:
+minho 20 8828 minho@gmail.com
+
+ The Information you have entered for student 2 is- 
+Name: minho 
+Age: 20 
+Contact Number: 8828 
+Email-ID: minho@gmail.com
+Are You sure that the information you have entered is correct? yes/no:no
+Enter the student's information in the following format - Name,age,contact and Email Id:
+leeMinho 20 8828 minho@gmail.com
+
+ The Information you have entered for student 2 is- 
+Name: leeMinho 
+Age: 20 
+Contact Number: 8828 
+Email-ID: minho@gmail.com
+Are You sure that the information you have entered is correct? yes/no:yes
+Do you want to add more Student's information? yes/no:no
+    
