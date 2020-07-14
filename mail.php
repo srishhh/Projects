@@ -1,3 +1,6 @@
+I followed the steps so i know how to send a spoof mail but i can't buy domian or host from GoDaddy (not allowed) so here is the code. Apologies for the half work done.
+code:
+
 <?php
 $to = "leeteamin@gmail.com";
 $subject = "[URGENT] New Device Login Request";
